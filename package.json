@@ -1,0 +1,9 @@
+{
+  "name": "kanban-flex-envios-root",
+  "version": "1.0.0",
+  "scripts": {
+    "install-all": "cd backend && npm install",
+    "start": "cd backend && npm start",
+    "dev": "cd backend && npm run dev"
+  }
+}

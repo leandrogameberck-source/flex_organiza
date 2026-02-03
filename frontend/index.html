@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanban Flex Envios</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">Kanban Flex Envios</div>
+        <div class="header-actions">
+            <button id="refresh-btn">Atualizar</button>
+        </div>
+    </header>
+
+    <main class="kanban-board">
+        <div class="column" data-status="Recebido">
+            <h3>Recebido <span class="count">0</span></h3>
+            <div class="cards-container"></div>
+        </div>
+        <div class="column" data-status="Em andamento">
+            <h3>Em andamento <span class="count">0</span></h3>
+            <div class="cards-container"></div>
+        </div>
+        <div class="column" data-status="Aguardando envio">
+            <h3>Aguardando envio <span class="count">0</span></h3>
+            <div class="cards-container"></div>
+        </div>
+        <div class="column" data-status="Enviado">
+            <h3>Enviado <span class="count">0</span></h3>
+            <div class="cards-container"></div>
+        </div>
+        <div class="column" data-status="Retornos">
+            <h3>Retornos <span class="count">0</span></h3>
+            <div class="cards-container"></div>
+        </div>
+        <div class="column" data-status="Entregue">
+            <h3>Entregue <span class="count">0</span></h3>
+            <div class="cards-container"></div>
+        </div>
+        <div class="column" data-status="Encerrado">
+            <h3>Encerrado <span class="count">0</span></h3>
+            <div class="cards-container"></div>
+        </div>
+    </main>
+
+    <!-- Modal de Detalhes -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modal-body">
+                <!-- Conteúdo preenchido via JS -->
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
